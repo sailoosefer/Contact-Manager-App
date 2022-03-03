@@ -1,0 +1,113 @@
+
+body{
+    height: 100%;
+    background-color:#ECFCFF;
+    width: 100%;
+}
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
+.sign{
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height: 500px;
+    
+}
+.saveContact{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+}
+#saveButton{
+
+    width:90px;
+    border-radius:5px;
+    height:30px;
+    background-color:#1C6DD0;
+    color:white;
+}
+a{
+    text-decoration:none;
+    color:#2D31FA;
+}
+#inputForm{
+    display: flex;
+    flex-direction:column;
+
+}
+label{
+    margin:10px 0px;
+
+
+}
+input{
+    height:30px;
+    width: 300px;
+    background-color: white;
+    font-size:15px;
+    border-radius:5px;
+}
+#sign-in-button{
+
+    margin-top: 10px;
+    width:310px;
+    height:40px;
+    border-radius:5px;
+    background-color:#1C6DD0;
+    color:#ECFCFF;
+}
+
+.lock-logo{
+    position: relative;
+    right:35%;
+    color:#D6E5FA;
+}
+.contactstable{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactContainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headRowContact{
+
+    display:flex;
+    flex-direction: row;
+    
+    width:900px;
+    border:1px solid black;
+
+}
+
+.contactHeading{
+    background:grey;
+    border-right: 1px solid black;
+    padding:15px;
+    width:300px;
+    display:flex;
+    justify-content: center;
+
+
+}
+.headRowContactValues{
+    
+    border-right: 1px solid black;
+    padding:15px;
+    width:300px;
+    display:flex;
+    justify-content: center;
+}

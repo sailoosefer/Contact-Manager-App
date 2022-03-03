@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/d7b7ce1508.js" crossorigin="anonymous"></script>
+    <title>Contacts</title>
+</head>
+<body>
+
+    <div class="saveContact">
+       <h3>Add Contacts</h3>
+       <form id="inputForm" action="saveContact" method="post">
+            <div>
+                    <label style="margin-right: 10px;" for="name">Name</label>
+                    <input type="text" id="name" name="Name">
+            </div><br>
+            <div>
+                <label style="margin-right: 10px;" for="phno">Ph No</label>
+                <input type="number" id="phno" name="phno" required>
+            </div><br>
+            <div>
+                <label style="margin-right: 10px;" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+            </div><br>
+
+           
+           <div style="display:flex;flex-direction:row-reverse; margin-top:20px; margin-bottom:20px;">
+            <button type="submit" id="saveButton">Save</button>
+           </div>
+
+
+
+       </form>
+    </div>
+
+    <center><h3>My Contacts</h3></center>
+    <div class="contactstable">
+        <% if(contactLists.length ===0) { %>
+          <center>  <h5>no contacts yet</h5> </center>
+        <% } else { %>
+
+           
+             <div class="contactContainer">
+
+
+             
+               
+                    <div class="headRowContact">
+                        <div class="contactHeading">Name</div>
+                        <div class="contactHeading">Phno</div>
+                        <div class="contactHeading">Email</div>
+                    </div>
+
+               
+        
+                   <% for(var i = 0; i < contactLists.length; i++) { %>
+                      <div class="headRowContact">
+                          <div class="headRowContactValues"><%= contactLists[i].name %></div>
+                          <div class="headRowContactValues"><%= contactLists[i].phno %></div>
+                          <div class="headRowContactValues"><%= contactLists[i].email %></div>
+                      </div>
+                      <% } %>
+                
+
+                    </div>
+        
+
+        <% } %>
+    </div>
+    
+</body>
+</html>

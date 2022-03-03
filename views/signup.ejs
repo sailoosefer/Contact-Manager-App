@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/d7b7ce1508.js" crossorigin="anonymous"></script>
+    <title>Contacts</title>
+</head>
+<body>
+
+    <div class="sign">
+        <h3>Sign Up</h3>
+        <p>Already have an account? <a href="/"> Sign In</a></p>
+        
+         <form id="inputForm"action="/signup" method="post">
+             <label for="emailInput">Email</label>
+             <input id="emailInput" type="email" name="email">
+             <label for="password">Password</label>
+             <input id="password" type="password" name="password">
+             <label for="secret">Secret</label>
+             <input id="secret" type="text" name="secret"><br>
+             
+             
+             <button type="submit" id="sign-in-button"> <i class="fas fa-lock lock-logo"></i>  Sign Up</button>
+             <div style="width:340px">
+                <p>By clicking the "Sign Up" button You are creating an account, and you agree to the Terms of Use.</p>
+ 
+             </div>
+             
+                     
+             <% if(flag) { %>
+              
+                <h3 style="color:red">User exsist</h3>
+             <% } %>
+             
+         </form>
+
+    </div>
+    
+</body>
+</html>
